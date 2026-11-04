@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite the article below."
+title: "DQ-MPCC: Dual-Quaternion MPCC for Quadrotor Racing"
+type: software
+repository-code: "https://github.com/LASER-Robotics/dq_mpcc"
+license: BSD-3-Clause
+authors:
+  - family-names: Guevara
+    given-names: Bryan S.
+  - family-names: Recalde
+    given-names: Luis F.
+  - family-names: Li
+    given-names: Guanrui
+  - family-names: Nascimento
+    given-names: Tiago
+preferred-citation:
+  type: article
+  title: "DQ-MPCC: Dual-Quaternion MPCC for Quadrotor Racing"
+  authors:
+    - family-names: Guevara
+      given-names: Bryan S.
+    - family-names: Recalde
+      given-names: Luis F.
+    - family-names: Li
+      given-names: Guanrui
+    - family-names: Nascimento
+      given-names: Tiago
+  journal: "IEEE Robotics and Automation Letters"
+  year: 2026
+  status: in-press

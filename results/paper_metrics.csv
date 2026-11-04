@@ -1,0 +1,28 @@
+setting,metric,unit,statistic,mpcc,dq_mpcc,dq_mpcc_exact_jl_inv
+sil_n100,T_min,s,mean_std,3.457±0.010,3.226±0.007,3.141±0.012
+sil_n100,T_avg,s,mean_std,3.478±0.006,3.252±0.004,3.164±0.011
+sil_n100,delta_max,cm,mean_std,17.88±0.62,24.53±0.73,24.55±0.80
+sil_n100,delta_avg,cm,mean_std,12.01±0.20,15.85±0.20,15.44±0.44
+sil_n100,e_c_rmse,cm,mean_std,5.23±0.14,12.70±0.11,12.04±0.22
+sil_n100,e_l_rmse,cm,mean_std,1.44±0.02,1.60±0.04,1.57±0.04
+sil_n100,v_max,m/s,value,11.19,11.00,11.09
+sil_n100,a_p99,m/s^2,mean_std,29.7±0.4,29.9±0.4,29.7±1.0
+sil_n100,omega_rms,rad/s,mean_std,5.28±0.03,5.68±0.02,5.73±0.11
+sil_n100,L_p,m/lap,mean_std,22.44±0.06,21.80±0.06,21.80±0.07
+sil_n100,solve_median,ms,value,5.88,7.60,+0.2 vs dq_mpcc
+sil_n100,solve_p99,ms,value,7.64,9.63,+0.2 vs dq_mpcc
+sil_n100,solid_gate_contacts,count/runs,value,17/100,2/100,0/100
+real_world,T_min,s,median_std,3.872±0.032,3.464±0.010,
+real_world,T_avg,s,median_std,3.906±0.030,3.493±0.009,
+real_world,delta_max,cm,median_std,30.7±1.8,22.1±1.0,
+real_world,delta_avg,cm,median_std,13.0±0.8,14.7±0.4,
+real_world,e_c_rmse,cm,median_std,11.5±0.9,14.0±0.4,
+real_world,e_l_rmse,cm,median_std,4.59±0.01,4.82±0.01,
+real_world,v_max,m/s,median_std,10.45±0.10,10.40±0.06,
+real_world,a_p99,m/s^2,median_std,34.9±2.5,28.7±0.2,
+real_world,omega_rms,rad/s,median_std,6.66±0.26,6.47±0.08,
+real_world,L_p,m/lap,median_std,21.28±0.08,20.75±0.05,
+real_world,attempts,count,value,11,7,
+real_world,completed_three_laps,count,value,6,6,
+real_world,failed_attempts,count,value,5,1,
+real_world,margin_compliant_flights,count/completed,value,2/6,6/6,

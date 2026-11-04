@@ -1,0 +1,12 @@
+# generated per machine
+controller/c_generated_code_*/
+controller/acados_ocp_*.json
+build/
+install/
+log/
+__pycache__/
+*.pyc
+tuning_fronts.pdf
+results/sil/
+results/hw/
+results/sim/

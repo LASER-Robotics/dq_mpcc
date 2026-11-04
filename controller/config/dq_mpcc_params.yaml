@@ -1,0 +1,5 @@
+dq_mpcc_node:
+  ros__parameters:
+    quad_name: quadrotor
+    vtheta_max: 10.0          # [m/s] — change per experiment
+    weights_file: ""          # "" = auto-discover tuning/best_weights_dq_mpcc_sil_v{X}.json

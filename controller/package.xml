@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>quadrotor_mpc</name>
+  <version>0.1.0</version>
+  <description>Quadrotor NMPC / MPCC / DQ-MPCC in C++ with acados</description>
+  <maintainer email="bryansgue@laser.ci.ufpb.br">Bryan Guevara</maintainer>
+  <license>BSD-3-Clause</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>eigen</depend>
+  <depend>rclcpp</depend>
+  <depend>ament_index_cpp</depend>
+  <depend>nav_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>std_srvs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>quadrotor_msgs</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
