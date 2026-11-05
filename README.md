@@ -4,7 +4,7 @@
 
 **Bryan S. Guevara, Luis F. Recalde, Guanrui Li, Tiago Nascimento**
 
-*IEEE Robotics and Automation Letters, 2026 (accepted)*
+*IEEE Robotics and Automation Letters, 2026 (accepted)* · [**Paper (PDF)**](paper/DQ-MPCC_RAL_2026.pdf)
 
 ![ROS 2 Humble](https://img.shields.io/badge/ROS%202-Humble-22314E)
 ![acados](https://img.shields.io/badge/solver-acados%20SQP--RTI-1f6feb)
@@ -77,6 +77,7 @@ of metrics reported in the article is in [`results/paper_metrics.csv`](results/p
 
 | Path | Content |
 |--|--|
+| [`paper/`](paper) | The accepted article (PDF) |
 | [`controller/`](controller) | ROS 2 package `quadrotor_mpc`: both controllers, OCP generators, reference pipeline, launch files |
 | [`config/`](config) | Deployed configurations: MPCC trial 76 and DQ-MPCC trial 46 |
 | [`tuning/`](tuning) | Complete final Pareto fronts, selected gains and the configuration-selection protocol |
@@ -196,3 +197,4 @@ Technological Development (CNPq) under research projects 401097/2025-0,
 ## License
 
 BSD 3-Clause, see [LICENSE](LICENSE). Third-party dependencies keep their own licenses.
+The article in [`paper/`](paper) is not covered by this license.
