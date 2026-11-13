@@ -255,15 +255,16 @@ def build_mpcc_model():
     a_theta = MX.sym("a_theta")   # progress acceleration [m/s²]
     u = vertcat(delta_f, w_cmd, a_theta)
 
-    # Quaternion → rotation matrix
-    qw, qx, qy, qz = q[0], q[1], q[2], q[3]
+    # Quaternion → rotation matrix. Normalize FIRST, then build the skew:
+    # R = I + 2 qw [v]x + 2 [v]x^2 is orthonormal only for a unit quaternion.
+    qn = ca.sqrt(q[0]**2 + q[1]**2 + q[2]**2 + q[3]**2 + np.finfo(np.float64).eps)  # ARM-safe
+    q_normed = q / qn
+    qw, qx, qy, qz = q_normed[0], q_normed[1], q_normed[2], q_normed[3]
     q_hat = MX.zeros(3, 3)
     q_hat[0,1] = -qz;  q_hat[0,2] =  qy
     q_hat[1,0] =  qz;  q_hat[1,2] = -qx
     q_hat[2,0] = -qy;  q_hat[2,1] =  qx
-    qn = ca.sqrt(q[0]**2 + q[1]**2 + q[2]**2 + q[3]**2 + np.finfo(np.float64).eps)  # ARM-safe
-    q_normed = q / qn
-    Rot = MX.eye(3) + 2*q_hat@q_hat + 2*q_normed[0]*q_hat
+    Rot = MX.eye(3) + 2*q_hat@q_hat + 2*qw*q_hat
 
     # Dynamics
     dp = v
